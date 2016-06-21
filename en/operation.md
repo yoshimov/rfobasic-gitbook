@@ -1,6 +1,8 @@
 BASIC! Operation
 ================
 
+<!-- toc -->
+
 ## Permissions
 
 This application requests many permissions, permissions such as sending and receiving SMS messages, making phone calls, record audio, etc. BASIC! does not exercise any of these permissions (except writing to the SD card) on its own. These permissions get exercised by the BASIC! programmer, you. You and only you. You exercise these permissions by means of the programs that you write.
@@ -69,7 +71,7 @@ This feature will not work if the Preference option "Editor AutoIndent" is not c
 
 ### Menus
 
-#### Run
+#### Run {#menus-run}
 
 Run the current program.
 
@@ -190,3 +192,152 @@ Exit `Delete` by tapping the BACK key.
 
 Opens a sub-menu with options for setting the colors of the various screens in BASIC!
 
+- COLOR SCHEME
+
+    Sets the color scheme of the screens. The schemes are identified by their appearance with the default colors. Choose Black text on a White background, White text on a Black background or White text on a Blue background.
+
+- CUSTOM COLORS
+
+    Check the box to override the Color Scheme setting, allowing you to set your own colors. You can set the Text (foreground) Color, the Background Color, the Line Color, and the Highlight Color. Each color is specified as a single number with 16 hexadecimal digits: four fields of four digits each for Alpha (opacity), Red, Green, and Blue components.
+
+##### CONSOLE SETTINGS
+
+Opens a sub-menu with options for settings of the Console and various others screens in BASIC!
+
+- FONT SIZE
+
+    Sets the font size (Small, Medium, or Large) to be used with the various screens in BASIC!.
+
+- TYPEFACE
+
+    Choose the typeface to be used on the Output Console and some other screens:
+	Monospace, Sans Serif, or Serif.
+
+- CONSOLE MENU
+
+    Check the box if the Menu should be visible in the Output Console and TGet screen.
+
+- CONSOLE LINES
+
+    Check the box if the text lines in the Output Console should be underlined.
+
+- EMPTY CONSOLE COLOR
+
+    Choose the background color of the part of the Output Console that has not yet been written. It can match the background color of the text or the color of the lines separating text lines.
+	
+	This setting also applies to the `Select` (but not `Dialog.select`) command.
+
+##### EDITOR SETTINGS
+
+Opens a sub-menu with options for setting properties and features of the Program Editor.
+
+- EDITOR LINES
+
+    Check the box if the text lines in the Editor should be underlined.
+
+- EDITOR LINE WRAP
+
+    Check the box if long text lines in the Editor should wrap at the edge of the screen. If unchecked, long lines are not wrapped, and the Editor screen may be scrolled horizontally.
+
+- EDITOR AUTOINDENT
+
+    Check the box if you want the Editor to do auto indentation. Enabling auto indentation also enables the formatting of a line that ends with the "#" character.
+	
+	Some devices are not able to do auto indenting properly. In some of those devices the AutoIndent feature may cause the Editor to be unusable. If that happens, turn off AutoIndent.
+
+##### MENU ITEMS ON ACTION BAR
+
+Opens a sub-menu with options for moving some of the Editor menu items to the Action Bar, if there is room for them there. You can select as many as you like, but the number of items moved depends on the device and orientation. These options have no effect on Android devices before Honeycomb (3.0).
+
+- RUN ON ACTION BAR
+
+    If checked, Android will attempt to move the RUN item from the Editor Menu to the Action Bar.
+
+- LOAD ON ACTION BAR
+
+    If checked, Android will attempt to move the LOAD item from the Editor Menu to the Action Bar.
+
+- SAVE ON ACTION BAR
+
+    If checked, Android will attempt to move the SAVE item from the Editor Menu to the Action Bar.
+
+- EXIT ON ACTION BAR
+
+    If checked, Android will attempt to move the EXIT item from the Editor Menu to the Action Bar.
+
+##### SCREEN ORIENTATION
+
+Choose to allow the Sensors to determine the orientation of the screens or to set a fixed orientation without regard to the Sensors.
+
+Note: The reverse orientations apply to Android 2.3 or newer.
+
+##### GRAPHIC ACCELERATION
+
+Check this box to enable GPU-assisted graphics acceleration on devices since 3.0 (Honeycomb) that support it. It is disabled by default. If you enable this option, test your program carefully. Hardware acceleration can make some of BASIC!’s graphical operations fail.
+
+##### BASE DRIVE
+
+Some Android devices have several external storage devices (and some have no physical external storage devices). BASIC! will use the system-suggested device as its base drive. The base drive is the device where the BASIC! "rfo-basic" directory (base directory) is located. The base directory is where BASIC!’s programs and data are stored. (See "Paths Explained", later in this manual.)
+
+If your device does have more than one external storage device they will be listed here. If your device has no external storage devices, your one and only choice will be "No external storage". Tap the device you want to use as the base drive and press the BACK key. You will then be given the choice of either immediately restarting BASIC! with the new base drive or waiting and doing the restart yourself.
+
+In this manual, <pref base drive> means the base drive you selected when you set the Base Drive here. In many devices, the system-suggested drive is "/sdcard".
+
+Note: If you have created a Launcher Shortcut (see Appendix C) with files in one base directory but try to execute that shortcut while using a different base directory, the shortcut will fail to execute. You will get an error message.
+
+#### Commands
+
+The Commands command presents the list of the BASIC! commands and functions as copied from Appendix A of this document.
+
+Tapping an alpha key will cause the command list to scroll to commands that start with that character. There will be no scrolling if there is no command that starts with that character.
+
+Note: You can hide the virtual keyboard with the BACK key. If you do that, you will not be able to get it back until you invoke the `Commands` option again.
+
+Tapping on a particular command causes that command to be copied to the clipboard (not including the page number) and returning to the Editor. You can then paste the command into your BASIC! program.
+
+#### About
+
+The `About` option displays the Bintray page for the release of BASIC! that corresponds to the release of the BASIC! that you are using. Make sure that you have a connection to the Internet before selecting `About`.
+
+#### Exit
+
+The only way to cleanly exit BASIC! is to use the `Exit` option.
+
+Pressing the HOME key while in BASIC! leaves BASIC! in exactly the same state it was in when the HOME key was tapped. If a program was running, it will still be running when BASIC! is re-entered. If you were in the process of deleting, the Delete screen will be shown when BASIC! is re-entered.
+
+## Run
+
+Selecting `Run` from the Editor’s menu starts the program running. However, if the source in the Editor has been changed, then the Save dialog will be displayed. You may choose to save the changed source or continue without saving.
+
+The BASIC! Output Console will be presented as soon as the program starts to run. You will not see anything on this screen unless one of the following situations occur:
+
+- the program prints something
+- the `END` statement is executed
+- you are in Echo mode
+- there is a run-time error
+
+If the program does not print anything then the only indication you would get that the program has finished is if the program ends with an `End` statement.
+
+If the program does not contain any executable statements then the message, "Nothing to execute" will be displayed.
+
+Tapping the BACK key will stop a running program. Tapping the BACK key when the program run has ended will restart the Editor.
+
+If the program ended with a run-time error, the line where the error occurred will be shown selected in the Editor. If the error occurred in an `INCLUDE` file then the `INCLUDE` statement will be shown selected.
+
+The Editor cursor will remain where it was when the `Run` was started if no run-time error occurred.
+
+### Menu
+
+Pressing the MENU key or touching the Menu icon while a program is running or after the program is stopped will cause the Run Menu to be displayed. (Except when Graphics is running. See the Graphics section for details.)
+
+#### Stop
+
+If a program is running, the `Stop` menu item will be enabled. Tapping `Stop` will stop the running program. `Stop` will not be enabled if a program is not running.
+
+#### Editor
+
+`Editor` will not be enabled if a program is running. If the program has stopped and `Editor` is thus enabled then selecting `Editor` will cause the Editor to be re-entered. You could also use the BACK key to do this.
+
+## Crashes
+
+BASIC! is a very large and complex program that is constantly under development. From time to time, it will crash. Previous versions of BASIC! supported automatic crash reporting. This feature has been temporarily disabled while we work on an implementation that is more compatible with Android versions 4.2 and later. We apologize for the inconvenience.
