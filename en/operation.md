@@ -157,3 +157,36 @@ Returns to the Editor with the changed text. If there is selected text in the `T
 Returns to the Editor with the original text unchanged. All changes made during the Search will be undone. Think of the BACK key as UNDO ALL.
 
 #### Load and Run
+
+Selecting this option is exactly the same as first selecting `Load` and then selecting `Run`. The selected program is loaded into the Editor and is run immediately.
+
+#### Save and Run
+
+Selecting this option is a fast way to save and then run. Any changes you have made are saved, overwriting your file, and your program is run immediately. A brief popup notifies you that your file has been changed. If the program you are editing has no name (not previously loaded or saved), the Editor will ask you what name to use.
+
+#### Format
+
+Format the program currently in the Editor. The keywords are capitalized. Program lines are indented as appropriate for the program structure. Left- and right-double quotation marks (“ and ”) are replaced by simple ASCII quotation marks (").
+
+When copying program text from the Forum or another web site, "non-breaking space" characters, designated `&nbsp` in HTML, may be inserted into the program text. Except when they are enclosed in quoted strings, `Format` converts these characters to simple ASCII spaces.
+
+#### Delete
+
+Delete files and directories. The command should be used for maintaining files and directories that are used in BASIC! but it can also be used to delete any file or directory on the SD card for which you have the required permissions. `Delete` starts in the `rfo-basic` directory.
+
+Tapping `Delete` presents the "BASIC! Delete File" screen. The screen shows the path to your current directory followed by sorted lists of the directories and files in it. Directories are marked with `(d)` appended to the name and appear at the top of the list.
+
+Tapping a file name displays the "Confirm Delete" dialog box. Tap the `Delete` button to delete the file. Tap the `No` button to dismiss the dialog box and not delete the file.
+
+Tapping a directory name displays the contents of the directory. If the directory is empty the "Confirm Delete" dialog box is shown. Tap the `Delete` button to delete the directory. Tap the No button to dismiss the dialog box and not delete the directory.
+
+Tap the ".." at the top of the screen to move up one directory level. Tapping the ".." has no effect if you are in the root directory "/".
+
+Exit `Delete` by tapping the BACK key.
+
+#### Preferences
+
+##### SCREEN COLORS
+
+Opens a sub-menu with options for setting the colors of the various screens in BASIC!
+

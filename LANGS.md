@@ -2,4 +2,4 @@ Languages
 =========
 
 * [English](en/)
-* [Japanese] (ja/)
+* [日本語](ja/)
