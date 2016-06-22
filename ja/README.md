@@ -1,16 +1,20 @@
-About the Title, De Re BASIC!
+De Re BASIC!の名前について
 =============================
 
-"De Re" is Latin for "of the thing" or "about".
+"De Re"はラテン語で「物事」や「～について」などを指します。
 
-About the Cover Art
+カバーアートについて
 ===================
 
-Thanks to BASIC! collaborator Nicolas Mougin. The images are screenshots from real BASIC! programs available from the Google Play™ store, or from the excellent collection of shared BASIC! programs available at http://laughton.com/basic/programs.
+BASIC!の共同作業者のNicolas Mougin氏が作りました。このイメージはGoogle Playから入手できる実際のBASIC!のプログラムや、以下のサイトからダウンロードできる素晴らしい多くのプログラムから作られてます。
 
-You can find more information on the BASIC! user forum at http://rfobasic.freeforums.org/shared-basic-programs-f6.html.
+- <http://laughton.com/basic/programs>
 
-Credits
+その他の情報については、以下のユーザーフォーラムから参照できます。
+
+- <http://rfobasic.freeforums.org/shared-basic-programs-f6.html>
+
+クレジット
 =======
 
 Thanks to Paul Laughton, the original creator of BASIC! and of this document.
@@ -18,7 +22,7 @@ Mr. Laughton has put this document in the Public Domain.
 
 Thanks also to Mike Leavitt of Lansdowne, VA, USA, for his many contributions and long-time support.
 
-Technical Editor
+技術的な編集者
 ================
 
 The current editor of this manual monitors https://github.com/RFO-BASIC/De-Re-Basic/issues and the BASIC! user forum at http://rfobasic.freeforums.org/suggestions-for-improving-the-manual-f9.html for corrections and suggestions.
