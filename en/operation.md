@@ -1,8 +1,6 @@
 BASIC! Operation
 ================
 
-<!-- toc -->
-
 ## Permissions
 
 This application requests many permissions, permissions such as sending and receiving SMS messages, making phone calls, record audio, etc. BASIC! does not exercise any of these permissions (except writing to the SD card) on its own. These permissions get exercised by the BASIC! programmer, you. You and only you. You exercise these permissions by means of the programs that you write.
