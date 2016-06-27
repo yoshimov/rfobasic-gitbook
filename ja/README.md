@@ -17,29 +17,36 @@ BASIC!の共同作業者のNicolas Mougin氏が作りました。このイメー
 クレジット
 =======
 
-Thanks to Paul Laughton, the original creator of BASIC! and of this document.
-Mr. Laughton has put this document in the Public Domain.
+Paul Laughton氏がBASIC!とこの説明書のオリジナルを作成されました。ありがとうございます。
+Laughton氏がこのドキュメントを公開しました。
 
-Thanks also to Mike Leavitt of Lansdowne, VA, USA, for his many contributions and long-time support.
+Lansdowne, VA, USAのMike Leavitt氏による多くの貢献と長い間の支援に感謝します。
 
 技術的な編集者
 ================
 
-The current editor of this manual monitors https://github.com/RFO-BASIC/De-Re-Basic/issues and the BASIC! user forum at http://rfobasic.freeforums.org/suggestions-for-improving-the-manual-f9.html for corrections and suggestions.
+現在のこの説明書の編集者は、 https://github.com/RFO-BASIC/De-Re-Basic/issues と BASIC!のユーザフォーラム http://rfobasic.freeforums.org/suggestions-for-improving-the-manual-f9.html の修正と提案をチェックしています。
 
-Getting BASIC!
+BASIC!の入手
 ==============
 
-You can get BASIC! for your Android device from the Google Play™ store.
+BASIC!は、AndroidデバイスのGoogle Play™ストアから入手できます。
 
-If you prefer to download the installation file (Basic.apk) yourself, or to get a previous version, get it from Bintray at https://bintray.com/rfo-basic/android/RFO-BASIC/
-This manual is also available from Bintray, in PDF format. BASIC! collaborator Nicolas Mougin keeps the manual in HTML format on his BASIC! website: http://rfo-basic.com/manual. The document source is available from GitHub at https://github.com/RFO-BASIC/De-Re-Basic.
+もしインストールファイル(Basic.apk)を自分でダウンロードしたい、もしくは以前のバージョンを利用したい場合は、
+以下のBintrayからダウンロードしてください。 <https://bintray.com/rfo-basic/android/RFO-BASIC/>
 
-BASIC! Forum
+この説明書もBintrayからPDF形式でダウンロードできます。
+BASIC!の協力者のNicolas Mougin氏が、HTML形式でWebサイトに公開しています。 <http://rfo-basic.com/manual>
+このドキュメントのソースは、GitHubにあります。 <https://github.com/RFO-BASIC/De-Re-Basic>
+
+BASIC!フォーラム
 ============
-Join the community of BASIC! users at http://rfobasic.freeforums.org, where you are always welcome.
 
-BASIC! Tutorial
+BASIC!のユーザコミュニティに参加してください。 <http://rfobasic.freeforums.org>
+いつでも歓迎します。
+
+BASIC!チュートリアル
 ===============
 
-A BASIC! user, Nick Antonaccio, has written a very nice tutorial for BASIC! You can find it at http://rfobasic.com.
+BASIC!のユーザ、Nick Antonaccio氏が素晴らしいBASIC!のチュートリアルを書かれています。
+このWebサイトから参照できます。 <http://rfobasic.com>
