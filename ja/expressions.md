@@ -58,7 +58,7 @@ These operations work only on numeric variables. Their action is performed as pa
 
 Using these operators on a variable makes the variable unavailable for other operations that require a variable. For example, you cannot pass a variable by reference (see `User-Defined functions`) if you pre- or post-increment or -decrement it, because you cannot pass an expression by reference. An exception is made to allow implicit assignment (actual or implied `LET`).
 
-## String Expression `<sexp>`
+## String Expression `<sexp>` {#string-expression-sexp}
 
 A string expression consists of one or more string variables or string constants separated by '+' operators. The definition can be stated more completely using this standard formal notation:
 
