@@ -273,3 +273,41 @@ If `<sexp>` is an empty string ("") the value returned will be 65536 (one more t
 Returns the position of an occurrence of the substring `<sub_sexp>` in the base string `<base_sexp>`.
 
 If the optional start parameter `<start_nexp>` is not present then the function starts at the first character and searches forward.
+
+If the start parameter is `>= 0`, then it is the starting position of a forward (left-to-right) search. The left-most character is position 1. If the parameter is negative, it is the starting position of a reverse (right-to-left) search. The right-most character is position -1.
+
+If the substring is not in the base string, the function returns 0. It can not return a value larger than the length of the base string.
+
+## `STARTS_WITH(<sub_sexp>, <base_sexp>{, <start_nexp>})`
+
+Determines if the substring `<sub_sexp>` exactly matches the part of the base string `<base_sexp>` that starts at the position `<start_nexp>`. The `<start_nexp>` parameter is optional; if it is not present then the default starting position is 1, the first character, so the base string must start with the substring. If present, `<start_nexp>` must be `>= 1`.
+
+The function returns the length of the matching substring. If no match is found, the function returns 0.
+
+## `ENDS_WITH(<sub_sexp>, <base_sexp>)`
+
+Determines if the substring `<sub_sexp>` exactly matches the end of the base string `<base_sexp>`.
+
+If the base string ends with the substring, the function returns the index into the base string where the substring starts. The value will always be `>= 1`. If no match is found, the function returns 0.
+
+## `GR_COLLISION(<object_1_nvar>, <object_2_nvar>)`
+
+The variables `<object_1_nvar>` and `<object_2_nvar>` are the object pointers returned when the objects were created.
+
+If the boundary boxes of the two objects overlap then the function will return true (not zero). If they do not overlap then the function will return false (zero).
+
+Objects that may be tested for collision are: point, rectangle, bitmap, circle, arc, oval, and text. In the case of a circle, an arc, an oval, or text, the object’s rectangular boundary box is used for collision testing, not the actual drawn object.
+
+## `BACKGROUND()`
+
+A running BASIC! program continues to run when the HOME key is tapped. This is called running in the Background. When not in the Background mode, BASIC! is in the Foreground mode. BASIC! exits the Background mode and enters the Foreground mode when the BASIC! icon on the home screen is tapped.
+
+Sometimes a BASIC! programmer wants to know if the program is running in the Background. One reason for this might be to stop music playing while in the Background mode.
+
+The `BACKGROUND()` function returns true (1) if the program is running in the background. It returns false (0) if the program is not running in the background.
+
+If you want to be able to detect Background mode while Graphics is open, you must not call `Gr.render` while in the Background mode. Doing so will cause the program to stop running until the Foreground mode is re-entered. Use the following code line for all `Gr.render` commands:
+
+```
+IF !BACKGROUND() THEN GR.RENDER
+```
